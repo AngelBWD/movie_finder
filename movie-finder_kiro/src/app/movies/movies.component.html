@@ -1,0 +1,31 @@
+<h1>Popular Movies</h1>
+<div class="row">
+   <div class="col-lg-2" *ngFor="let movie of popularMovies">
+       <app-movie [movie]="movie" ></app-movie>          <!-- Предаваме информация от ХТМЛ към детето ( 2то movie  е movie от цикъла др-то е от movie.component.ts ) -->                
+   </div>
+</div>
+
+<h1>In Theater Movies</h1>
+<div class="row">
+    <div class="col-lg-2" *ngFor="let movie of inTheaterMovies">
+        <app-movie [movie]="movie" ></app-movie>          <!-- Предаваме информация от ХТМЛ към детето ( 2то movie  е movie от цикъла др-то е от movie.component.ts ) -->                
+    </div>
+ </div>
+
+ <h1>Popular Kid Movies</h1>
+<div class="row">
+    <div class="col-lg-2" *ngFor="let movie of popularKidsMovies">
+        <app-movie [movie]="movie" ></app-movie>          <!-- Предаваме информация от ХТМЛ към детето ( 2то movie  е movie от цикъла др-то е от movie.component.ts ) -->                
+    </div>
+ </div>
+
+ <h1>Best Drama Movies</h1>
+<div class="row">
+    <div class="col-lg-2" *ngFor="let movie of bestDramaMovies">
+        <app-movie [movie]="movie" ></app-movie>          <!-- Предаваме информация от ХТМЛ към детето ( 2то movie  е movie от цикъла др-то е от movie.component.ts ) -->                
+    </div>
+ </div>
+ 
+
+
+
