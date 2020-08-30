@@ -5,8 +5,10 @@
     </div>
     <h6>{{movie.release_date}}</h6>
     <div class="card-footer text-muted">
-      <a class="btn btn-primery" href="#">View details</a>
+      <a class="btn btn-primery" [routerLink]="['/movies', movie.id]">View details</a> <!-- може и routerLink="movies/{{movie.id}}" -->
     </div>
 </div>
   
   
+<!-- routerLink се ползва вместо href защото премахва дефоутното поведение на href а именно презареждане на APP защото
+ние правим SinglePageApp -->
