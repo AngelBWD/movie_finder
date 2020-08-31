@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { ImageUrlVDirective } from './image-url-v.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    ImageUrlVDirective
   ],
   imports: [
     BrowserModule,
